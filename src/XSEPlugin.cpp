@@ -24,7 +24,7 @@ bool SK_Display_ForceDPIAwarenessUsingAppCompat(bool set)
 	HANDLE hProc =
 		SK_GetCurrentProcess();
 
-	QueryFullProcessImageName(
+	QueryFullProcessImageNameW(
 		hProc, 0,
 		wszProcessName, &dwProcessSize);
 
